@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stylesheet1</title>
+    <style>
+        body{
+            font: 100% Lucida Sans, Verdana;
+            margin: 20px;
+            line-height: 26px;
+        }
+        .container{
+            min-width: 900px;
+        }
+        .wrapper{
+            position: relative;
+            overflow: auto;
+        }
+        #top,
+        #sidebar,
+        #bottom,
+        .menuitem{
+            border-radius: 4px;
+            margin: 4px;
+        }
+        #top{
+            background-color: #04aa6d;
+            color: #ffffff;
+            padding: 15px;
+        }
+        #menubar{
+            width: 200px;
+            float: left;
+        }
+        #main{
+            padding: 10px;
+            margin: 0 210px;
+        }
+        #sidebar{
+            background-color: #32a4e7;
+            color: #ffffff;
+            padding: 10px;
+            width: 180px;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            position: absolute;
+        }
+        #bottom{
+            border: 1px solid #d4d4d4;
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            font-size: 70%;
+            line-height: 14px;
+        }
+        #top h1, #top p, #menulist{
+            margin: 0;
+            padding: 0;
+        }
+        .menuitem{
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            list-style-type: none;
+            padding: 2px;
+            cursor: pointer;
+        }
+        .menuitem:hover{
+            background-color: #ffffff;
+        }
+        .menuitem:first-child{
+            background-color: #04aa6d;
+            font-weight: bold;
+        }
+        #menulist a{
+            text-decoration: none;
+            color: #000000;
+        }
+        #menulist .menuitem:first-child a{
+            color: #ffffff;
+        }
+        a{
+            color: #000000;
+            text-decoration: underline;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        
+        @media(max-width: 800px){
+            #sidebar{
+                width: auto;
+                position: relative;
+            }
+            #main{
+                margin-right: 0;
+            }
+        }
+
+        @media(max-width: 600px){
+            #menubar{
+                width: auto;
+                float: none;
+            }
+            #main{
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container wrapper">
+        <div id="top">
+          <h1>Welcome to Nabila Hamdayani Adama D121221093</h1>
+          <p>Use the menu to select different Stylesheets</p>
+        </div>
+        <div class="wrapper">
+          <div id="menubar">
+            <ul id="menulist">
+              <li class="menuitem">
+                <a href="stylesheet1.html">Stylesheet 1</a>
+              </li>
+              <li class="menuitem">
+                <a href="stylesheet2.html">Stylesheet 2</a>
+              </li>
+              <li class="menuitem">
+                <a href="stylesheet3.html">Stylesheet 3</a>
+              </li>
+              <li class="menuitem">
+                <a href="stylesheet4.html">Stylesheet 4</a>
+              </li>
+              <li class="menuitem">
+                <a href="nostylesheet.html">No Stylesheet</a>
+              </li>
+            </ul>
+          </div>
+          <div id="main">
+            <h1>Same Page Different Stylesheets</h1>
+            <p>
+              This is a demonstration of how different stylesheets can change the
+              layout of your HTML page. You can change the layout of this page by
+              selecting different stylesheets in the menu, or by selecting one of
+              the following links:<br />
+              <a href="stylesheet1.html">Stylesheet1</a>,
+              <a href="stylesheet2.html">Stylesheet2</a>,
+              <a href="stylesheet3.html">Stylesheet3</a>,
+              <a href="stylesheet4.html">Stylesheet4</a>.
+            </p>
+            <h2>No Styles</h2>
+            <p>
+              This page uses DIV elements to group different sections of the HTML
+              page. Click here to see how the page looks like with no
+              stylesheet:<br /><a href="NoStylesheet.html">No Stylesheet</a>.
+            </p>
+          </div>
+          <div id="sidebar">
+            <h3>Side-Bar</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi cum neque recusandae accusamus sed minima.
+            </p>
+          </div>
+        </div>
+  
+        <div id="bottom">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id ex expedita dolorum, quo et? Dolorum sit deleniti perferendis necessitatibus atque nam, debitis distinctio quos fugiat quaerat iste, voluptate consequatur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium explicabo et architecto possimus tenetur qui? Reprehenderit, ducimus dolor doloribus reiciendis corrupti dolores officia quis porro delectus cumque ab fuga voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non ducimus id aliquam voluptatum? Fuga expedita deleniti, qui ducimus maxime voluptate porro perspiciatis enim. Similique ut adipisci doloremque qui. Repudiandae.
+        </div>
+      </div>
+</body>
+</html>
